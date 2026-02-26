@@ -1,0 +1,44 @@
+{
+  "alpha": 0.05,
+  "shapiro_age": {
+    "variable": "Age",
+    "W": 0.9814577414504957,
+    "p": 7.337348958675439e-08,
+    "normal": false
+  },
+  "shapiro_fare": {
+    "variable": "Fare",
+    "W": 0.5218913010396561,
+    "p": 1.0840444395829968e-43,
+    "normal": false
+  },
+  "ttest_welch": {
+    "variable": "Fare",
+    "grupo": "Survived",
+    "t": 6.839099259085254,
+    "p": 2.6993323503141236e-11,
+    "significativo": true
+  },
+  "anova_age_pclass": {
+    "variable": "Age",
+    "grupo": "Pclass",
+    "p": 7.487984171960277e-24,
+    "significativo": true
+  },
+  "pearson_age_fare": {
+    "r": 0.0960666917690389,
+    "p": 0.010216277504447018,
+    "significativo": true
+  },
+  "spearman_age_fare": {
+    "rho": 0.1350512177342878,
+    "p": 0.00029580903243060916,
+    "significativo": true
+  },
+  "chi2_sex_survived": {
+    "chi2": 260.71702016732104,
+    "p": 1.1973570627755645e-58,
+    "cramers_v": 0.5409359434469282,
+    "significativo": true
+  }
+}
