@@ -17,7 +17,7 @@ class ReportePDF(FPDF):
         self.set_y(-15)
         self.set_font("Helvetica", "I", 8)
         self.set_text_color(128, 128, 128)
-        self.cell(0, 10, f"Garcia Manuela - 1023774044 | Pagina {self.page_no()}/{{nb}}", align="C")
+        self.cell(0, 10, f"Palacio Manuela - 1023774044 | Pagina {self.page_no()}/{{nb}}", align="C")
 
     def titulo_seccion(self, num, titulo):
         self.set_font("Helvetica", "B", 13)
@@ -76,7 +76,7 @@ def main():
     pdf.ln(10)
     pdf.set_font("Helvetica", "", 12)
     info = [
-        ("Estudiante", "Garcia Manuela"),
+        ("Estudiante", "Palacio Manuela"),
         ("Codigo", "1023774044"),
         ("Curso", "ET0203 - Seminario de la Ciencia de los Datos"),
         ("Docente", "MSc. Luis Esteban Gomez Cadavid"),
@@ -315,7 +315,7 @@ def main():
     pdf.bullet("Notebook reproducible: Kernel -> Restart & Run All ejecuta sin errores.")
 
     # Guardar
-    out_path = "ET0203_U1_Reporte_1023774044_Garcia.pdf"
+    out_path = "ET0203_U1_Reporte_1023774044_Palacio.pdf"
     pdf.output(out_path)
     print(f"Reporte generado: {out_path}")
     print(f"Paginas: {pdf.pages_count}")
